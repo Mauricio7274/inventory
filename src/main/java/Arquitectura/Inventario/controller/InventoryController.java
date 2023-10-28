@@ -118,8 +118,13 @@ public class InventoryController {
 
     @GetMapping("producto/{id}")
     public ResponseEntity<?> showById(@PathVariable Integer id){
+<<<<<<< HEAD
         Inventory producto = iInventoryService.findById(id);
         if (producto == null) {
+=======
+        Inventory cliente = iInventoryService.findById(id);
+        if (cliente == null) {
+>>>>>>> origin/develoment
             return new ResponseEntity<>(MensajeResponse.builder()
                     .mensaje("el registro que intenta buscar no existe")
                     .object(null)
@@ -130,9 +135,15 @@ public class InventoryController {
         return new ResponseEntity<>(MensajeResponse.builder()
                 .mensaje("")
                 .object(InventoryDto.builder()
+<<<<<<< HEAD
                         .id(producto.getId())
                         .nombre(producto.getNombre())
                         .cantidad(producto.getCantidad())
+=======
+                        .id(cliente.getId())
+                        .nombre(cliente.getNombre())
+                        .cantidad(cliente.getCantidad())
+>>>>>>> origin/develoment
                         .build())
                 .build()
                 , HttpStatus.OK);

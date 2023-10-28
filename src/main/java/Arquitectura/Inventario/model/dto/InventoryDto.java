@@ -13,7 +13,11 @@ public class InventoryDto implements Serializable {
 
     private String nombre;
 
+<<<<<<< HEAD
     private Integer cantidad;
+=======
+    private String cantidad;
+>>>>>>> origin/develoment
 
 
 

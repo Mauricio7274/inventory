@@ -3,7 +3,11 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+<<<<<<< HEAD
 
+=======
+import java.util.Date;
+>>>>>>> origin/develoment
 
 @Data
 @AllArgsConstructor
@@ -20,6 +24,10 @@ public class Inventory implements Serializable{
     @Column(name = "nombre")
     private String nombre;
     @Column(name = "cantidad")
+<<<<<<< HEAD
     private Integer cantidad;
+=======
+    private String cantidad;
+>>>>>>> origin/develoment
 
 }
